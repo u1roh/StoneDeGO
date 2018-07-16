@@ -24,6 +24,8 @@
   <ItemGroup>
     <Content Include="app.css" />
     <Content Include="index.html" />
+    <Content Include="vsPerson.html" />
+    <Content Include="vsComputer.html" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
