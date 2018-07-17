@@ -230,15 +230,25 @@ window.onload = () => {
         }
     }
 
+    function getMousePosition(e: MouseEvent) {
+        var rect = (<HTMLElement>e.target).getBoundingClientRect();
+        return {
+            x: e.clientX - rect.left,
+            y: e.clientY - rect.top
+        };
+    }
+
     canvas.onmousemove = e => {
-        cursorX = Math.floor((e.x - canvas.offsetLeft) * ngrid / size);
-        cursorY = Math.floor((e.y - canvas.offsetTop)  * ngrid / size);
+        const pos = getMousePosition(e);
+        cursorX = Math.floor(pos.x * ngrid / size);
+        cursorY = Math.floor(pos.y * ngrid / size);
         draw();
     };
 
     canvas.onclick = e => {
-        const x = Math.floor((e.x - canvas.offsetLeft) * ngrid / size);
-        const y = Math.floor((e.y - canvas.offsetTop)  * ngrid / size);
+        const pos = getMousePosition(e);
+        const x = Math.floor(pos.x * ngrid / size);
+        const y = Math.floor(pos.y * ngrid / size);
         if (game.putStone(x, y, turn % 2 == 0 ? Stone.Red : Stone.Blue)) {
             onPutStone();
 
