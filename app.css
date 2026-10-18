@@ -1,0 +1,22 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0 12px 24px;
+    max-width: 720px;
+}
+
+canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    touch-action: manipulation;
+}
+
+#status {
+    display: block;
+    min-height: 1.5em;
+}
