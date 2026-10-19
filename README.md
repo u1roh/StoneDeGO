@@ -11,7 +11,7 @@ TypeScript で作った、12×12 の陣取りゲームです。ブラウザー�
 
 このリポジトリには GitHub Actions の Pages デプロイ設定があります。GitHub の **Settings → Pages → Build and deployment** で **GitHub Actions** を選び、`master` に push すると自動で公開されます。
 
-公開 URL は通常 `https://<アカウント名>.github.io/StoneDeGO/` です。TypeScript を変更した場合は、JavaScript を再生成して `app.js` も一緒に commit してください。
+公開 URL は通常 `https://u1roh.github.io/StoneDeGO/` です。TypeScript を変更した場合は、JavaScript を再生成して `app.js` も一緒に commit してください。
 
 ## JavaScript の再生成
 
